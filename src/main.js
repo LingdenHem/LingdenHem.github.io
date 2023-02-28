@@ -8,9 +8,9 @@ import { defineAsyncComponent } from 'vue';
 const router = createRouter({
     history: createWebHistory(),
     routes: [
-      { path: '/vue-app/page1', component: Page1 },
-      { path: '/vue-app/page2', component: Page2 },
-      { path: '/vue-app', redirect: '/vue-app/page1' },
+      { path: '/page1', component: Page1 },
+      { path: '/page2', component: Page2 },
+      { path: '/', redirect: '/page1' },
     ],
   });
 
